@@ -3,4 +3,6 @@ function adicionarCaracter(caracter){
 
     document.querySelector('#display').value = valorInput + caracter 
 
+    console.log(caracter)
+
 }
