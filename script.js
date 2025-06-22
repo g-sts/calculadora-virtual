@@ -1,8 +1,20 @@
 function adicionarCaracter(caracter){
-    const valorInput = document.querySelector('#display').value
+    let valorInput = document.querySelector('#display');
 
-    document.querySelector('#display').value = valorInput + caracter 
+    valorInput.value = valorInput.value + caracter;
+    
+    if(valorInput.value>0){
+        valorInput.value = caracter
+    }
 
-    console.log(caracter)
+}
 
+function limpar(){
+    document.querySelector('#display').value = ' '
+}
+
+function calcular(){
+    let valorInput = document.querySelector('#display');
+
+    valorInput.value = eval(valorInput.value)
 }
